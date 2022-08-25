@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/montserrat-v25-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v25-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/montserrat-v25-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v25-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v25-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
 header {
   background-color: #943d24;
   color: #fffbf0;
@@ -23,7 +42,7 @@ nav > ul > li > a {
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Montserrat;
   background-color: #fffbf0;
   font-size: 12px;
   color: #2d2d22;
@@ -41,6 +60,14 @@ h2 {
   color: #2d2d22;
 }
 
+.project-heading {
+  transition: 0.3s;
+}
+
+.project-heading:hover {
+  font-size: 16px;
+}
+
 footer {
   background-color: #2d2d22;
   color: #fffbf0;
@@ -50,4 +77,22 @@ footer {
 footer > ul > li > a {
   color: white;
   text-decoration: none;
+}
+
+.hobbies {
+  list-style: none;
+  margin-left: -20px;
+}
+
+.hobbies::before {
+  content: "🧡";
+  padding-right: 8px;
+}
+
+.project-pic {
+  transition: 0.3s;
+}
+
+.project-pic:hover {
+  opacity: 0.5;
 }
