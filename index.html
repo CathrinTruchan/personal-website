@@ -9,9 +9,9 @@
   </head>
   <body>
     <header>
-      <img alt="logo" src="" />
+      <div class="logo"></div>
       <nav>
-        <ul>
+        <ul class="menu">
           <li><a href="#about-me">About me</a></li>
           <li><a href="#work">My Work</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -19,55 +19,66 @@
       </nav>
     </header>
     <main>
-      <section id="about-me">
-        <h1>Hi I'm Cathrin</h1>
-        <figure>
-          <img src="" alt="picture of Cathrin" />
-          <figcaption>That's me!</figcaption>
-        </figure>
-        <p>
-          Here are some facts about myself. Weit hinten, hinter den Wortbergen,
-          fern der Länder Vokalien und Konsonantien leben die Blindtexte.
-          Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik.
-        </p>
-        <h2>What I really like:</h2>
-        <ul>
-          <li class="hobbies">Yoga, Climbing and Cycling</li>
-          <li class="hobbies">Coding</li>
-          <li class="hobbies">My Friends and Family</li>
-        </ul>
+      <h1>Hi I'm Cathrin</h1>
+      <section class="about-me" id="about-me">
+        <div>
+          <figure>
+            <img
+              class="profil-pic"
+              src="https://avatars.githubusercontent.com/u/111566392?v=4"
+              alt="picture of Cathrin"
+            />
+            <figcaption>That's me!</figcaption>
+          </figure>
+        </div>
+        <div>
+          <p>
+            Here are some facts about myself. Weit hinten, hinter den
+            Wortbergen, fern der Länder Vokalien und Konsonantien leben die
+            Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste
+            des Semantik.
+          </p>
+          <h2>What I really like:</h2>
+          <ul>
+            <li class="hobbies">Yoga, Climbing and Cycling</li>
+            <li class="hobbies">Coding</li>
+            <li class="hobbies">My Friends and Family</li>
+          </ul>
+        </div>
       </section>
       <section id="work">
         <h2>My projects:</h2>
-        <div>
-          <img
-            src="https://picsum.photos/seed/picsum/500/200"
-            alt="Project One"
-            class="project-pic"
-          />
-          <h3 class="project-heading">Project One</h3>
-          <p>Here are some useful informations.</p>
-        </div>
-        <div>
-          <img
-            src="https://picsum.photos/seed/picsum/500/200"
-            alt="Project Two"
-            class="project-pic"
-          />
-          <h3 class="project-heading">Project Two</h3>
-          <p>Here are some useful informations.</p>
-        </div>
-        <div>
-          <img
-            src="https://picsum.photos/seed/picsum/500/200"
-            alt="Project Three"
-            class="project-pic"
-          />
-          <h3 class="project-heading">Project Three</h3>
-          <p>Here are some useful informations.</p>
+        <div class="projects-box">
+          <div class="project">
+            <img
+              src="https://picsum.photos/seed/picsum/200/200"
+              alt="Project One"
+              class="project-pic"
+            />
+            <h3 class="project-heading">Project One</h3>
+            <p>Here are some useful informations.</p>
+          </div>
+          <div class="project">
+            <img
+              src="https://picsum.photos/seed/picsum/200/200"
+              alt="Project Two"
+              class="project-pic"
+            />
+            <h3 class="project-heading">Project Two</h3>
+            <p>Here are some useful informations.</p>
+          </div>
+          <div class="project">
+            <img
+              src="https://picsum.photos/seed/picsum/200/200"
+              alt="Project Three"
+              class="project-pic"
+            />
+            <h3 class="project-heading">Project Three</h3>
+            <p>Here are some useful informations.</p>
+          </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="contact">
         <h2>Drop me a message:</h2>
         <p>phone: 12345 / 9876</p>
         <p>email: me@cathrin.com</p>
